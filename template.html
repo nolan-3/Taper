@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Title (Taper #10)</title>
+
+<!-- “Title” Copyright (C) 2023 Author
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright 
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+This is from Taper #10: Powers Of Ten, Spring 2023:
+
+https://taper.badquar.to/10/title_of_your_work.html
+
+... Include your creative statement here ...
+
+-->
+
+<style>
+	body { margin:0 ; overflow:hidden }
+	a { color:#eee ; text-decoration:none }
+	header { margin:0 ; padding:0 ; background-color:#444 ; color:#bbb ;
+		position:relative ; z-index:1000 }
+	header > h1 { margin:0 ; font-size:12px ; font-family:sans-serif ;
+		border-bottom:1px #999 solid ; padding:5px 10px ; line-height:17px }
+</style>
+</head>
+<body>
+<header id=nav>
+	<h1>
+		<a href="index.html">Taper #10 :
+		TBA</a> : Spring 2023 <br>
+		<a href="title_of_your_work.html">“Title”</a> by
+		<a href="about.html#authorlastname">Author</a> :
+		<a href="prev.html">&lt;&lt;</a> &mdash;
+		<a href="next.html">&gt;&gt;</a>
+	</h1>
+</header>
+
+
+		<input id="i" type="text" value="make a poem"> </input>
+		<button onclick="f()">
+
+			<p id="test"> 
+				testing testing testin
+			</p>
+
+
+
+<script> 
+f=()=>{var p =''
+	let a =['Ne mora te teneat',
+	'Ne cunctare precor',
+	'Diva Thalia jubet',
+	'Docta Thalia jubet',
+	'Eja agedum! Lubeat',
+	'Quod peto, sponte voles',
+	'Quod precor, ipse voles',
+	'Ne dedigneris',
+	'Sit tibi chare placens',
+	'Non detrectabis',
+	'Promptus, Amice, velis',
+	'Te mora nulla liget',
+	
+	'chartæ perfringere gemmam',
+	'fua vincula demere chartæ',
+	'tectis admittere chartam',
+	'præsentem evolvere chartam',
+	'peregrinam evolvere chartam',
+	'concedere lumina chartæ',
+	'percurrere lumine chartam',
+	'nostram acceptare tabellam',
+	'chartæ perfringere ceram',
+	'chartam lustrare legendo',
+	'lustare hanc lumine chartam',
+	'lustare legendo tabellam',
+	
+	'Non ex ignotis',
+	'Non ex ingratis',
+	'Non ex Odrysiis',
+	'Non ex barbaricis',
+	'Non ex Sarmaticis',
+	'E tibi jucundis',
+	'Ex tibi jucundis',
+	'E tibi dilectis',
+	'Ex tibi dilectis',
+	'E tibi ter charts',
+	'Ex tibi pergratis',
+	'Ex tibi fat notis',
+
+	'Scribitur illa plagis',
+	'mittitur illa plagis',
+	'advenit illa plagis',
+	'devenit illa plagis',
+	'prodiit illa plagis',
+	'hanc tibi mitto plagis',
+	'& ea misa plagis',
+	'& ea scripta plagis',
+	'crede, venire plagis',
+	'dat tibi penna plagis,',
+	'tractibus illa venit',
+	'partibus illa venit',]
+
+	var t = document.getElementById('i')
+	t=t.value
+	console.log(t)
+	for (var i=0; i < t.length; i++){
+		console.log(i)
+		var num = t.charCodeAt(i) % 12
+		var multiplier = (i % 4)*12
+    p += a[num + multiplier] + ', '
+		}
+	console.log(p)
+	document.getElementById("test").innerHTML = p;
+}
+	</script>
+</body>
+</html>
