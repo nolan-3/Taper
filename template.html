@@ -103,21 +103,16 @@ f=()=>{var p =''
 	'tractibus illa venit',
 	'partibus illa venit',]
 
-	var t = document.getElementById('i')
-	t=t.value
-	console.log(t)
+	var t = document.getElementById('i').value
 	for (var i=0; i < t.length; i++){
-		console.log(i)
 		var num = t.charCodeAt(i) % 12
 		var multiplier = (i % 4)*12
     p += a[num + multiplier] + ', ' 
 	if(i%2){p+='\n'}
 		}
-	console.log(p)
 	document.getElementById("test").innerHTML = p;
 }
 
-/*var intervalId = */
 window.setInterval(function(){
   f()
 }, 100);
