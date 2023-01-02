@@ -33,8 +33,8 @@ https://taper.badquar.to/10/title_of_your_work.html
 	<h1>
 		<a href="index.html">Taper #10 :
 		TBA</a> : Spring 2023 <br>
-		<a href="title_of_your_work.html">“Title”</a> by
-		<a href="about.html#authorlastname">Author</a> :
+		<a href="title_of_your_work.html">Steggy</a> by
+		<a href="about.html#authorlastname">Nolan McCloskey</a> :
 		<a href="prev.html">&lt;&lt;</a> &mdash;
 		<a href="next.html">&gt;&gt;</a>
 	</h1>
@@ -42,10 +42,9 @@ https://taper.badquar.to/10/title_of_your_work.html
 
 
 		<input id="i" type="text" value="make a poem"> </input>
-		<button onclick="f()">
 
-			<p id="test"> 
-				testing testing testin
+			<p id="test" style="white-space: pre-line"> 
+				
 			</p>
 
 
@@ -100,7 +99,7 @@ f=()=>{var p =''
 	'& ea misa plagis',
 	'& ea scripta plagis',
 	'crede, venire plagis',
-	'dat tibi penna plagis,',
+	'dat tibi penna plagis',
 	'tractibus illa venit',
 	'partibus illa venit',]
 
@@ -111,11 +110,17 @@ f=()=>{var p =''
 		console.log(i)
 		var num = t.charCodeAt(i) % 12
 		var multiplier = (i % 4)*12
-    p += a[num + multiplier] + ', '
+    p += a[num + multiplier] + ', ' 
+	if(i%2){p+='\n'}
 		}
 	console.log(p)
 	document.getElementById("test").innerHTML = p;
 }
+
+/*var intervalId = */
+window.setInterval(function(){
+  f()
+}, 100);
 	</script>
 </body>
 </html>
